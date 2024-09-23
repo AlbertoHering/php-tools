@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="MyProjectStandard">
+    <description>My custom coding standard for PHP.</description>
+
+    <!-- Include the PSR-12 standard -->
+    <rule ref="PSR12"/>
+
+    <!-- Rules for doc comments -->
+    <rule ref="Squiz.Commenting.FileComment">
+        <severity>5</severity>
+        <content>
+            <text>File doc comment is missing.</text>
+        </content>
+    </rule>
+    <rule ref="Squiz.Commenting.FunctionComment">
+        <severity>5</severity>
+        <content>
+            <text>Doc comment for function is missing.</text>
+        </content>
+    </rule>
+</ruleset>
